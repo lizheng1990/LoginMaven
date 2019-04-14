@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>用户信息</title>
+<link rel="icon" href="login_icon.png" type="image/x-icon" sizes="32x32">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="AjaxTest.js"></script>
+<style>
+/*设置body字体和背景色*/
+body {
+	/*设置body字体*/
+	font-family: "微软雅黑";
+	/*设置body背景色*/
+	background: #eee;
+}
+
+/*设置页眉样式*/
+.header-line {
+	/*设置页眉宽度*/
+	width: 100%;
+	/*设置页眉高度*/
+	height: 4px;
+	/*设置页眉背景色*/
+	background: #0dbfdd;
+}
+
+/*设置除页眉外的所有body样式*/
+.content {
+	/*设置宽度*/
+	width: 25%;
+	/*设置外边距*/
+	margin: 20px auto;
+	/*设置文本对齐方式*/
+	text-align: center;
+}
+
+/*设置logo大小*/
+.content-logo {
+	width: 80px;
+	height: 80px;
+}
+
+/*设置标题大小*/
+.content-title {
+	/*设置外边距*/
+	margin: 10px 0 25px 0;
+	/*设置字体大小*/
+	font-size: 30px;
+	/*设置字体颜色*/
+	color: #747474;
+	/*设置字体粗细*/
+	font-weight: normal;
+}
+
+/*设置form表单样式*/
+.content-form {
+	/*设置form表单宽度*/
+	width: 100%;
+	/*设置内边距大小*/
+	padding: 30px 0 0;
+	/*设置边框样式*/
+	border: 2px solid #dedede;
+	/*设置背景色*/
+	background: #fff;
+}
+
+/*设置记住提示区域格式*/
+#info {
+	/*设置文本对齐方式*/
+	text-align: center;
+	/*设置文本颜色*/
+	color: #fd0505;
+	
+}
+
+
+/*设置记住登录状态区域格式*/
+.remember-me {
+	/*设置左内边距大小*/
+	padding-left: 35px;
+	/*设置文本对齐方式*/
+	text-align: left;
+}
+
+/*设置忘记密码区域格式*/
+.content-login-password {
+	/*设置右内边距大小*/
+	padding-right: 35px;
+	/*设置文本对齐方式*/
+	text-align: right;
+}
+
+/*设置忘记密码文本格式*/
+.content-login-find {
+	/*设置文本颜色*/
+	color: #0dbfdd;
+	/*设置文本下划线方式*/
+	text-decoration: none;
+}
+
+/*设置所有content-form下form中div的下边距*/
+.content-form form div {
+	margin-bottom: 20px;
+}
+
+/*设置用户名和密码输入框格式*/
+.content-form form .user, .content-form form .password {
+	/*设置输入框宽度*/
+	width: 80%;
+	/*设置输入框高度*/
+	height: 20px;
+	/*设置输入框内边距*/
+	padding: 10px;
+	/*设置输入框边框样式*/
+	border: 1px solid #cccbcb;
+	/*设置输入框圆角*/
+	border-radius: 7px;
+}
+
+/*设置登录按钮格式*/
+.content-form-signup {
+	/*设置按钮宽度*/
+	width: 30%;
+	/*设置外边距*/
+	margin: 0 auto;
+	/*设置内边距*/
+	padding: 10px;
+	/*设置按钮边框样式*/
+	border: 1px solid #cccbcb;
+	/*设置按钮圆角*/
+	border-radius: 7px;
+	/*设置字体粗细*/
+	font-weight: bold;
+	/*设置字体大小*/
+	font-size: 20px;
+	/*设置字体颜色*/
+	color: #fff;
+	/*设置按钮背景色*/
+	background: #0dbfdd;
+	/*设置鼠标移到按钮上时光标样式*/
+	cursor: pointer;
+}
+
+/*设置注册链接样式*/
+.content-login-link {
+	/*设置字体大小*/
+	font-size: 20px;
+	/*设置按钮背景色*/
+	color: #0dbfdd;
+	/*设置文本下划线方式*/
+	text-decoration: none;
+}
+#table{
+ margin: 0 0 15px 100px;
+ font-size: 18px
+ }
+</style>
+</head>
+<body onload="userinfo()">
+	<header>
+		<div class="header-line"></div>
+	</header>
+	<div class="content">
+		<img class="content-logo" src="login.png" alt="logo">
+		<h1 class="content-title">欢迎来到用户信息页面</h1>
+		<div class="content-form">
+			<form id="loginForm" method="post" action="./LoginPage">
+			<table align="center" width=80% border="0.5" id="table">
+			<tr><td align="left" width="60">编号：</td>
+			<td align="left" id="id">XXX</td></tr>
+			<tr><td align="left" width="60">性别：</td>
+			<td align="left" id="xb">XXX</td></tr>
+			<tr><td align="left" width="60">年龄：</td>
+			<td align="left" id="nl">XXX</td></tr>
+			<tr><td align="left" width="60">城市：</td>
+			<td align="left" id="cs">XXX</td></tr>
+			<tr><td align="left" width="60">爱好：</td>
+			<td align="left" id="ah">XXX</td></tr>
+			<tr><td align="left" width="60">信息：</td>
+			<td align="left" id="xx">XXX</td></tr>
+			</table>
+				<div id="change_margin_3">
+					<input class="content-form-signup" type="button" value="注销" onclick="loginout()" />
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
