@@ -26,7 +26,7 @@ public class ConnectMysql {
 			System.out.println("dbPwd" + "=" + dbPwd);
 			//连接数据库的操作。
 			//加载com.mysql.jdbc.Driver类。
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			//使用drivermanager建立连接。
 			conn = DriverManager.getConnection(dbUrl, dbUser, dbPwd);
 			// 设置超时时间
