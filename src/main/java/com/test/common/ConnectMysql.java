@@ -21,6 +21,9 @@ public class ConnectMysql {
 			String dbUrl = prop.getProperty("DBURL");
 			String dbUser = prop.getProperty("DBUSER");
 			String dbPwd = prop.getProperty("DBPWD");
+			System.out.println("dbUrl" + "=" + dbUrl);
+			System.out.println("dbUser" + "=" + dbUser);
+			System.out.println("dbPwd" + "=" + dbPwd);
 			//连接数据库的操作。
 			//加载com.mysql.jdbc.Driver类。
 			Class.forName("com.mysql.jdbc.Driver");
