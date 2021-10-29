@@ -40,8 +40,10 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
 		<resources>
 			<resource>
+				<filtering>false</filtering>
 				<directory>src/main/java/com/test/common</directory>
 			</resource>
 		</resources>	
