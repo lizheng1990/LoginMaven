@@ -43,8 +43,12 @@
 		
 		<resources>
 			<resource>
+			  	<targetPath>src/main/java/com/test/common</targetPath>	
 				<filtering>false</filtering>
 				<directory>src/main/java/com/test/common</directory>
+				<excludes>
+					<exclude>inter.properties</exclude>
+				</excludes>
 			</resource>
 		</resources>	
 	</build>
