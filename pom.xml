@@ -43,6 +43,7 @@
 		
 		<resources>
 			<resource>
+				<targetPath>src/main/java/com/test/common</targetPath>
 				<directory>src/main/java/com/test/common</directory>
 				<includes>
 					<include>**/*.properties</include>
