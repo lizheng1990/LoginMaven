@@ -45,9 +45,9 @@
 			<resource>
 				<targetPath>src/main/java/com/test/common</targetPath>
 				<directory>src/main/java/com/test/common</directory>
-				<includes>
-					<include>**/*.properties</include>
-				</includes>
+				<excludes>
+					<exclude>**/*.properties</exclude>
+				</excludes>
 				<filtering>false</filtering>
 			</resource>
 		</resources>	
