@@ -43,11 +43,11 @@
 		
 		<resources>
 			<resource>
-				<targetPath>src/main/java/com/test/common</targetPath>
+				<targetPath>com/test/common</targetPath>
 				<directory>src/main/java/com/test/common</directory>
-				<excludes>
-					<exclude>**/*.properties</exclude>
-				</excludes>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
 				<filtering>false</filtering>
 			</resource>
 		</resources>	
